@@ -24,7 +24,7 @@ jobs:
         tag_prefix: "v"
         major_pattern: "major:"
         minor_pattern: "feat:"
-        format: "${tag_prefix}.${major}.${minor}.${patch}-${date +%s}"
+        format: "${major}.${minor}.${patch}-${date +%s}"
       id: version
         
     - name: Docker login
